@@ -1,0 +1,378 @@
+*{
+        margin:0;
+        padding: 0;
+        font-family:sans-serif,'Times New Roman';
+        box-sizing: border-box;
+}
+body{
+    background: white;
+    color:black;
+    margin: auto;
+}
+#header{
+    background-color: #2874f0;
+    width:100%;
+    height: 80px;
+    
+}
+.row{
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width : 100%;
+    height : 100%;
+}
+.row1{
+    padding-left: 6%;
+}
+.row2{
+    padding-right: 7%;
+}
+
+
+.row1 , .row2{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    align-items: center;
+}
+.logo .pic{
+    width:120px;
+    height: 25px;
+}
+.logo a{
+    text-decoration: none;
+    font-style: italic;
+    font-size: 12px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+
+}
+.logo a:hover{
+    text-decoration: underline white 1px;
+}
+.logo a span{
+    color: #ffe500;
+    font-style: ita;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 2px;
+    
+}
+.logo a span img{
+    width:15px;
+    height: 10px;
+    color:inherit;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 3px #75a1eaf5;
+}
+
+#search{
+    width: 450px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 0;
+}
+.search-button{
+    padding: 13px 10px 10px;
+    border: none;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    box-sizing: border-box;
+    background: #fff;
+}
+.button-box button{
+    padding: 11px 20px 10px;
+    border-radius: 5px;
+    border: none;
+    color: #2874f0;
+    font-weight: bold;
+    margin-left: 20px;
+    
+}
+.seller{
+    padding: 25px;
+      
+}
+.seller a{
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+   
+    
+}
+
+.select-menu .select-btn{
+    display: flex;
+    background: #fff;
+    padding: 10px;
+    font-size:16px;
+    font-weight: 500;
+    border-radius: 5px;
+    width:150px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px #2874f0;
+}
+.select-btn svg{
+    font-size: 15px;
+    transition: 0.3s;
+}
+.select-menu .active .select-btn svg{
+    transform: rotate(-180deg);
+}
+.select-menu .options{
+    position: absolute;
+    padding: 15px;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 3px black;
+    left: 0;
+    top: calc( 100% + 13px );
+    z-index: 10;
+    width: 255px;    
+}
+#menu{
+    position: relative;
+}
+.select-menu:active .options,.dB{
+    display: block;
+}
+.options .option{
+    display: flex;
+    height: 55px;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+.options .option:hover{
+    background: rgb(223, 217, 217);
+}
+.option svg{
+    font-size: 25px;
+    margin-right: 12px;
+}
+.options .option-txt{
+    font-size: 18px;    
+}
+.cart a{
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    padding: 25px;
+    margin:10px;
+    text-decoration: none;
+}
+.cart a svg path{
+    fill: #fff;
+}
+
+#Menu-content{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    border-bottom:1px solid rgb(193, 186, 186);
+    width: 100%;
+    height: 75px;
+    
+}
+#Menu-content .ulist{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2px;
+    width: 100%;
+    height:100%;
+}
+.ulist .list{
+    list-style: none;
+    
+}
+.list{
+    position: relative;
+}
+.list a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #2874f0;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+/* .list .submenu:hover+.sub-list{
+    display:block;
+} */
+#slideshow img{
+    
+    width: 100%;
+}
+
+.list img{
+    display: block;
+    height: 50px;
+    direction: ltr;
+    width: 100%;    
+}
+.Electronics{
+    padding: 0px;
+    margin: 0px;
+
+
+}
+.list-item{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border:3px solid #fff;
+    width:100%;
+    padding: 20px;
+}
+
+.list-item div{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    font-size: 13px;
+    font-weight: 300;
+    border:2px solid rgb(255, 255, 255);
+}
+.list-item div:hover{
+    box-shadow: 0px 0px 4px 0px #acafb4;
+    transform: scale(1.2);
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.list-item h2{
+    margin-top: 10px;
+}
+.list-item img{
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+}
+.Electronics h1{
+    padding-top: 10px;
+}
+.fashion-menu .sub-list{
+    display: flex;
+    flex-direction: column;
+    
+}
+/* .sub-list svg{
+    font-size: 15px;
+    transition: 0.3s;
+} */
+.fashion-menu .active .sub-list {
+    transform: rotate(-180deg);
+}
+.fashion-menu .options{
+    position: absolute;
+    padding: 15px;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 3px black;
+    left: 0;
+    top: calc( 100% + 13px );
+    z-index: 10;
+    width: 255px;    
+}
+
+#fashion{
+    position: relative;
+}
+.fashion-menu:active .options,.dopen{
+    display: block;
+}
+/*Two wheeler style*/
+.twowheeler-menu .sub-list{
+    display: flex;
+    flex-direction: column;
+    
+}
+.twowheeler-menu .active .sub-list {
+    transform: rotate(-180deg);
+}
+.twowheeler-menu .options{
+    position: absolute;
+    padding: 15px;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 3px black;
+    left: 0;
+    top: calc( 100% + 13px );
+    z-index: 10;
+    width: 255px;    
+}
+
+#twowheeler{
+    position: relative;
+}
+.twowheeler-menu:active .options,.dL{
+    display: block;
+}
+
+
+/* .sub-list{
+    display: none;
+    overflow: auto;
+    position: absolute;
+    top:100%;
+    left:0;
+    z-index: 5;
+} */
+/* .sub-list ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sub-list li{
+    display: block;
+    visibility:visible;
+}
+.sub-list li a{
+    font-size: 16px;
+    color: black;
+} */
+.dN{
+    display: none !important;
+}
+.open{
+    display: none !important;
+}
+.oL{
+    display:none !important;
+}
+
+

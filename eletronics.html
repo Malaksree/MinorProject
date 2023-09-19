@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Online Shopping Site</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="initial-scale=1.0">
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="whole">
+        <div id="header">
+            <div class="row">
+                <div class="row1">
+                    <div class="logo">
+                        <img src="image/Flipkart-Logo.png" class="pic">
+                        <a href="#">Explore <span>Plus<img src="image/plus.png" width="20px" height="20px"></span></a>
+    
+                    </div>
+                    <div class="search-box">
+                        <input type="search" name="serch" id="search" placeholder="Search for Product,brands and More">
+                        <button class=search-button type="submit"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#005cfa}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                        </button>
+                    </div>
+                    <div class="button-box">
+                        <button type="Submit" value="LOGIN" name="login">LOGIN</button>
+                    </div>
+                </div>
+                <div class = "row2">
+                    <div class="seller">
+                        <a href="seller.html" class="seller">Become a Seller</a>
+    
+                    </div>
+                    <div class="select-menu">
+                        <div class="select-btn" id="menu">
+                            <span class="sbtn-text">Menu</span>                                          
+                            <ul class="options dN" id="options">
+                                <li class="option"><a class="option-txt">Notification Preferences</a></li>
+                                    
+                                <li class="option"><a class="option-txt">24X7 Customer Care</a></li>
+                                    
+                                <li class="option"><a class="option-txt">Advertise</a></li>
+                                    
+                                <li class="option"><a class="option-txt">Download App</a></li>                                
+                            </ul> 
+                        </div>                      
+                    </div>
+                    <div class="cart">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg></i>
+                            <span>Cart</span>
+                        </a>    
+                    </div>    
+                </div>
+            </div>
+        </div>
+        
+<!-----------------------------------Menu Session--------------------------------------------------------->
+    <div id="Menu-content">
+        <ul class="ulist">
+            <li class="list"><a href="grocery.html"><img src="image/Grocery.png" ><span>Grocery</span></a></li>
+            <li class="list"><a href="phone.html"><img src="image/mobile/mobile.png" ><span>Mobile</span></a></li>
+            <li class="list">
+                <div class="fashion-menu">
+                <div class="sub-list" id="fashion">
+                    <img src="image/boy.png"><span style="color: #005cfa;font-size:16px;font-weight: 600;">Fashion</span>
+                    <ul class="options open" id="fashion-list">
+                        <li class="option"><a class="option-txt" href="women.html">Women Collection</a></li>
+                        <li class="option"><a class="option-txt" href="mens.html">Men Collection</a></li>
+                        <li class="option"><a class="option-txt" href="kids.html">Kids Collection</a></li>
+                    </ul></div></div>
+                </li>
+            <li class="list"><a href="eletronics.html"><img src="image/eletronics.png" ><span>Elctronics</span></a></li>
+            <li class="list"><a href="homefurniture.html"><img src="image/furniture.png" ><span>Home & Furniture</span></a></li>
+            <li class="list"><a href="appliance.html"><img src="image/appliance.png" ><span>Appliance</span></a></li>
+            <li class="list"><a href="#"><img src="image/flight.png"><span>Travel</span></a></li>
+            <li class="list"><a href="#"><img src="image/offer.png" >Top Offer</a></li>
+            <li class="list"><a href="beautytoy.html"><img src="image/teddy.png"><span>Beauty,Toy & More</span></a></li>
+            <li class="list">
+                <div class="twowheeler-menu">
+                    <div class="sub-list" id="twowheeler">
+                        <img src="image/bike.png" ><span style="color: #005cfa;font-size:16px;font-weight: 600;">TwoWheeler</span>                          
+                            <ul class="options oL" id="twowheeler-list">
+                                <li class="option"><a class="option-txt" href="#">Petrol</a></li>
+                                <li class="option"><a class="option-txt" href="#">Electrical</a></li>
+                            </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>    
+    </div>
+</div><br>
+<div class="eletronics">
+    <h1>Electonics items</h1>
+    <div class="list-item">
+        <div>
+            <img src="image/Electonics/canonprinter.png">
+            <h2>Canon Printer</h2>
+        </div>
+        <div>
+            <img src="image/Electonics/hair dryer.webp">
+            <h2>Hair Dryer</h2>
+        </div>
+        <div>
+            <img src="image/Electonics/monitor1.png">
+            <h2>Monitor</h2>
+        </div>
+        
+    </div>
+    <div class="list-item">
+        <div>
+            <img src="image/Electonics/monitor2.webp">
+            <h2>Monitor</h2>
+        </div>
+        <div>
+            <img src="image/Electonics/printer1.png">
+            <h2>Printer</h2>
+        </div>
+        <div>
+            <img src="image/Electonics/projector1.png">
+            <h2>Projector</h2>
+        </div>
+        
+    </div>
+</div>
+<div class="list-item">
+    <div>
+        <img src="image/Electonics/trimmer.webp">
+        <h2>Trimmer</h2>
+    </div>
+    <div>
+        <img src="image/Electonics/projector2.png">
+        <h2>Projector</h2>
+    </div>
+    <div>
+        <img src="image/Electonics/monitor2.webp">
+        <h2>Monitor</h2>
+    </div>
+    
+</div>
+</div>
+<script src="menu.js" ></script> 
+     <script src="fashion.js" ></script>
+     <script src="twowheeler.js" ></script>  
